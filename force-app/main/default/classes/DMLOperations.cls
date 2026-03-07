@@ -48,8 +48,9 @@ public with sharing class DMLOperations {
      */
     public static void createAccount(String name, String industry) {
         // Create a new Account and set the fields inline
-
+        Account acct = new Account(name=name,industry=industry);
         // Insert the Account
+        insert acct;
     }
 
     
